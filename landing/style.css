@@ -1,0 +1,165 @@
+/* Variables */
+/* Global */
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff6b00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: rgb(204, 85.6, 0);
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+}
+.hero .hero-text {
+  max-width: 600px;
+}
+.hero .hero-media img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Value cards */
+.value .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  flex: 1 1 calc(33% - 20px);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Timeline */
+.timeline .steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  flex: 1 1 calc(25% - 20px);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Projects */
+.projects .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  flex: 1 1 calc(33% - 20px);
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Reviews */
+.reviews .review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Team */
+.team .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.member {
+  flex: 1 1 calc(50% - 20px);
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Pricing */
+.pricing p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* CTA */
+.cta {
+  background: #ff6b00;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .value .cards, .timeline .steps, .projects .project-list, .team .team-list {
+    flex-direction: column;
+  }
+  .card, .step, .project, .member {
+    flex: 1 1 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
