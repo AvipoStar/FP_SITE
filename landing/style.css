@@ -4,8 +4,9 @@ body {
   font-family: "Arial", sans-serif;
   color: #333;
   margin: 0;
-  padding: 0;
+  padding: 78px 0 0;
   line-height: 1.5;
+  padding: 78px 0 0;
 }
 
 .container {
@@ -26,6 +27,88 @@ body {
 }
 .btn:hover {
   background: rgb(204, 85.6, 0);
+}
+.btn {
+  /* Header */
+}
+.btn .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+.btn .header-content {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.btn .logo {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn .main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.btn .main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn .main-nav a:hover {
+  color: #ff6b00;
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-content {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: #ff6b00;
 }
 
 /* Sections */
@@ -150,14 +233,32 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+  .header-content {
+    min-height: 110px;
+    padding: 12px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-nav {
+    justify-content: center;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
   }
-  .value .cards, .timeline .steps, .projects .project-list, .team .team-list {
+  .value .cards,
+  .timeline .steps,
+  .projects .project-list,
+  .team .team-list {
     flex-direction: column;
   }
-  .card, .step, .project, .member {
+  .card,
+  .step,
+  .project,
+  .member {
     flex: 1 1 100%;
   }
 }
