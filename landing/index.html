@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Интенсив по программированию</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.svg" />
 </head>
 <body>
-<header class="site-header">
+  <header class="site-header">
     <div class="container header-content">
       <a href="#" class="logo">IT Интенсив</a>
       <nav class="main-nav" aria-label="Основная навигация">
@@ -21,21 +21,25 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="program">
-    <div class="container">
+    <div class="container hero-content">
       <div class="hero-text">
         <h1>С нуля до собственного IT-проекта за 10 дней. Даже без опыта</h1>
-        <p>Участники работают в командах как в стартапе: создают продукт, презентуют его и получают реальный опыт.</p>
-        <a href="#signup" class="btn">Записаться сейчас</a>
+        <p>
+          Участники работают в командах как в стартапе: создают продукт,
+          презентуют его и получают реальный опыт.
+        </p>
+        <div class="hero-actions">
+          <button class="btn" data-open-modal="signupModal">Записаться сейчас</button>
+          <button class="btn btn-outline" data-open-modal="questionModal">Задать вопрос</button>
+        </div>
       </div>
       <div class="hero-media">
-        <img src="hero.jpg" alt="Дети за ноутбуками">
+        <img src="hero.jpg" alt="Дети за ноутбуками" />
       </div>
     </div>
   </section>
 
-  <!-- What you get -->
   <section class="value">
     <div class="container">
       <h2>Что твой ребёнок получит за 10 дней</h2>
@@ -69,7 +73,6 @@
     </div>
   </section>
 
-  <!-- Timeline -->
   <section class="timeline">
     <div class="container">
       <h2>Пошаговый путь к проекту</h2>
@@ -94,28 +97,26 @@
     </div>
   </section>
 
-  <!-- Projects -->
   <section class="projects" id="projects">
     <div class="container">
       <h2>Проекты прошлых потоков</h2>
       <div class="project-list">
         <div class="project">
-          <img src="project1.jpg" alt="Приложение для учёта привычек">
+          <img src="project1.jpg" alt="Приложение для учёта привычек" />
           <h3>Приложение для учёта привычек</h3>
         </div>
         <div class="project">
-          <img src="project2.jpg" alt="Сайт для поиска мероприятий">
+          <img src="project2.jpg" alt="Сайт для поиска мероприятий" />
           <h3>Сайт для поиска локальных мероприятий</h3>
         </div>
         <div class="project">
-          <img src="project3.jpg" alt="Мини-игра с рейтингом друзей">
+          <img src="project3.jpg" alt="Мини-игра с рейтингом друзей" />
           <h3>Мини-игра с рейтингом друзей</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Reviews -->
   <section class="reviews" id="reviews">
     <div class="container">
       <h2>Отзывы участников и родителей</h2>
@@ -132,7 +133,6 @@
     </div>
   </section>
 
-  <!-- Who it's for -->
   <section class="target">
     <div class="container">
       <h2>Кому будет интересно</h2>
@@ -145,18 +145,17 @@
     </div>
   </section>
 
-  <!-- Team -->
   <section class="team">
     <div class="container">
       <h2>Наши кураторы</h2>
       <div class="team-list">
         <div class="member">
-          <img src="mentor1.jpg" alt="Куратор 1">
+          <img src="mentor1.jpg" alt="Куратор 1" />
           <h3>Иван Иванов</h3>
           <p>Программист, 5 лет опыта</p>
         </div>
         <div class="member">
-          <img src="mentor2.jpg" alt="Куратор 2">
+          <img src="mentor2.jpg" alt="Куратор 2" />
           <h3>Мария Петрова</h3>
           <p>Дизайнер, 7 лет опыта</p>
         </div>
@@ -164,7 +163,6 @@
     </div>
   </section>
 
-  <!-- Pricing -->
   <section class="pricing" id="signup">
     <div class="container">
       <h2>Стоимость и условия</h2>
@@ -173,11 +171,23 @@
       <p>Место проведения: [город / площадка]</p>
       <p>Осталось <strong>12 мест</strong></p>
       <p>Приведи друга — получи <strong>3 000 ₽ скидки</strong> каждому</p>
-      <a href="#" class="btn">Записаться</a>
+      <button class="btn" data-open-modal="signupModal">Записаться</button>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <section class="question-block">
+    <div class="container question-block-content">
+      <div>
+        <h2>Остались вопросы по участию?</h2>
+        <p>
+          Напишите нам, и мы расскажем подробнее о программе, формате,
+          проживании, технике и поможем выбрать подходящий поток.
+        </p>
+      </div>
+      <button class="btn" data-open-modal="questionModal">Отправить вопрос</button>
+    </div>
+  </section>
+
   <section class="faq" id="faq">
     <div class="container">
       <h2>Вопросы родителей</h2>
@@ -196,13 +206,142 @@
     </div>
   </section>
 
-  <!-- Final CTA -->
   <section class="cta">
     <div class="container">
       <h2>Сделай свой первый IT-проект за 10 дней!</h2>
-      <a href="#signup" class="btn">Записаться сейчас</a>
+      <div class="cta-actions">
+        <button class="btn btn-light" data-open-modal="signupModal">Записаться сейчас</button>
+        <button class="btn btn-outline-light" data-open-modal="questionModal">Задать вопрос</button>
+      </div>
     </div>
   </section>
 
+  <!-- Overlay -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <!-- Modal: Question -->
+  <div class="modal" id="questionModal" aria-hidden="true" role="dialog" aria-labelledby="questionModalTitle">
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <h2 id="questionModalTitle">Задать вопрос</h2>
+      <p class="modal-subtitle">Оставьте контакты, и мы свяжемся с вами.</p>
+
+      <form class="form" id="questionForm">
+        <div class="form-group">
+          <label for="questionName">Ваше имя</label>
+          <input type="text" id="questionName" name="name" placeholder="Введите имя" required />
+        </div>
+
+        <div class="form-group">
+          <label for="questionPhone">Телефон</label>
+          <input type="tel" id="questionPhone" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </div>
+
+        <div class="form-group">
+          <label for="questionText">Ваш вопрос</label>
+          <textarea id="questionText" name="question" rows="5" placeholder="Напишите ваш вопрос" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить вопрос</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Signup -->
+  <div class="modal" id="signupModal" aria-hidden="true" role="dialog" aria-labelledby="signupModalTitle">
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <h2 id="signupModalTitle">Записаться на интенсив</h2>
+      <p class="modal-subtitle">Заполните форму, и мы свяжемся с вами для подтверждения участия.</p>
+
+      <form class="form" id="signupForm">
+        <div class="form-group">
+          <label for="signupParentName">Имя родителя</label>
+          <input type="text" id="signupParentName" name="parentName" placeholder="Введите имя" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signupChildName">Имя ребёнка</label>
+          <input type="text" id="signupChildName" name="childName" placeholder="Введите имя ребёнка" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signupAge">Возраст ребёнка</label>
+          <input type="number" id="signupAge" name="age" min="7" max="18" placeholder="Например, 14" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signupPhone">Телефон</label>
+          <input type="tel" id="signupPhone" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </div>
+
+        <div class="form-group">
+          <label for="signupComment">Комментарий</label>
+          <textarea id="signupComment" name="comment" rows="4" placeholder="Укажите удобное время для связи или вопрос"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modalOverlay = document.getElementById("modalOverlay");
+    const modals = document.querySelectorAll(".modal");
+    const openButtons = document.querySelectorAll("[data-open-modal]");
+    const closeButtons = document.querySelectorAll("[data-close-modal]");
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+
+      modal.classList.add("active");
+      modalOverlay.classList.add("active");
+      document.body.classList.add("modal-open");
+      modal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeAllModals() {
+      modals.forEach((modal) => {
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+      });
+
+      modalOverlay.classList.remove("active");
+      document.body.classList.remove("modal-open");
+    }
+
+    openButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        openModal(button.dataset.openModal);
+      });
+    });
+
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", closeAllModals);
+    });
+
+    modalOverlay.addEventListener("click", closeAllModals);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeAllModals();
+      }
+    });
+
+    document.getElementById("questionForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Вопрос отправлен");
+      this.reset();
+      closeAllModals();
+    });
+
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Заявка отправлена");
+      this.reset();
+      closeAllModals();
+    });
+  </script>
 </body>
 </html>
