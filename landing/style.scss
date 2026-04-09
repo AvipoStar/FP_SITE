@@ -289,6 +289,40 @@ section {
   margin-top: 20px;
 }
 
+.site-footer {
+  padding: 28px 0 32px;
+  border-top: 1px solid $border-color;
+  background: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -401,7 +435,8 @@ section {
   }
 
   .hero-content,
-  .question-block-content {
+  .question-block-content,
+  .footer-content {
     flex-direction: column;
     text-align: center;
   }
